@@ -63,6 +63,14 @@ sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ xenial main"
 sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ focal main"
 sudo add-apt-repository "deb http://mirror.enzu.com/ubuntu/ focal main"
 sudo add-apt-repository "deb-src http://mirror.enzu.com/ubuntu/ focal main"
+
+sudo add-apt-repository "deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse"
+sudo add-apt-repository "deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse"
+sudo add-apt-repository "deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse"
+sudo add-apt-repository "deb [arch=i386,amd64] http://us.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse"
+sudo add-apt-repository "deb [arch=i386,amd64] http://us.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse"
+sudo add-apt-repository "deb [arch=i386,amd64] http://security.ubuntu.com/ubuntu focal-security main restricted universe multiverse"
+
 sudo apt-get update
 sudo apt-get upgrade -y
 
