@@ -35,13 +35,13 @@ OE_SUPERADMIN="MyPassword"
 GENERATE_RANDOM_PASSWORD="False"
 OE_CONFIG="${OE_USER}-server"
 # Set the website name
-WEBSITE_NAME="_"
+WEBSITE_NAME="showcase"
 # Set the default Odoo longpolling port (you still have to use -c /etc/odoo-server.conf for example to use this.)
 LONGPOLLING_PORT="8072"
 # Set to "True" to install certbot and have ssl enabled, "False" to use http
-ENABLE_SSL="False"
+ENABLE_SSL="True"
 # Provide Email to register ssl certificate
-ADMIN_EMAIL="odoo@example.com"
+ADMIN_EMAIL="faithiology@gmail.com"
 ##
 ###  WKHTMLTOPDF download links
 ## === Ubuntu Trusty x64 & x32 === (for other distributions please replace these two links,
@@ -59,10 +59,10 @@ echo -e "\n---- Update Server ----"
 # universe package is for Ubuntu 18.x
 sudo add-apt-repository universe
 # libpng12-0 dependency for wkhtmltopdf
-sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ xenial main"
-sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ focal main"
-sudo add-apt-repository "deb http://mirror.enzu.com/ubuntu/ focal main"
-sudo add-apt-repository "deb-src http://mirror.enzu.com/ubuntu/ focal main"
+# sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ xenial main"
+# sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ focal main"
+# sudo add-apt-repository "deb http://mirror.enzu.com/ubuntu/ focal main"
+# sudo add-apt-repository "deb-src http://mirror.enzu.com/ubuntu/ focal main"
 
 sudo add-apt-repository "deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse"
 sudo add-apt-repository "deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse"
