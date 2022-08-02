@@ -60,7 +60,9 @@ echo -e "\n---- Update Server ----"
 sudo add-apt-repository universe
 # libpng12-0 dependency for wkhtmltopdf
 sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ xenial main"
-sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ Focal main"
+sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ focal main"
+sudo add-apt-repository "deb http://mirror.enzu.com/ubuntu/ focal main"
+sudo add-apt-repository "deb-src http://mirror.enzu.com/ubuntu/ focal main"
 sudo apt-get update
 sudo apt-get upgrade -y
 
